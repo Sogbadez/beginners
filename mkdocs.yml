@@ -1,0 +1,7 @@
+site_name: My Docs
+
+nav:
+    - Guide: Mkdocs.md
+    - Home: index.md
+   
+   
