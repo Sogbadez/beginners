@@ -1,3 +1,4 @@
+
 #  A Beginners Guide to MkDocs
 
 *Project documentation with markdown*
@@ -27,8 +28,6 @@ To see if you have Python and Pip installed, Run the following commands from the
 
 
 
-![Requirements](C:\Users\HP\Desktop\Beginners\Images\check.png)
-
 
 Skip ahead to installation if you already have these program installed
 
@@ -49,19 +48,32 @@ The MkDocs is now installed on your device. Check if everything worked okay by r
  To create a new project, run the following:
 
  `Mkdocs new  my-project` <br>
-`Cd my project`
+`cd my project`
 
 Your new project should contain a single configuration file **(mkdocs .yml)** and a folder, **doc** that will contain your documentation source file
 
 Because Mkdocs includes a built-in dev server that gives preview while you work, you may start it by running the mkdocs serve command:
 
-`mkdocs serve `
+`mkdocs serve `<br>
+`INFO     -  Building documentation...`<br>
+`INFO     -  Cleaning site directory`<br>
+`INFO     -  Documentation built in 0.22 seconds`<br>
+`INFO     -  Documentation built in 0.22 seconds`<br>
+`INFO     -  [12:35:34] Watching paths for changes: 'docs', 'mkdocs.yml'`<br>
+`INFO     -  [12:35:34] Serving on http://127.0.0.1:8000/`<br>
 
-Image
 
 In your browser, navigate to http://127.0.0.1:8000/ to see the default home page:
 
-![alt text](/Images/serve.PNG)
+
+![home](https://www.mkdocs.org/img/screenshot.png)
+
+
+
+
+## Installing Python and PIP
+    
+ 
 
 ## Adding Pages
 
@@ -72,12 +84,15 @@ To add a new page to your documentation:
 2.Add information about the order, title, and nesting of each page in the navigation header to the configuration file by adding a nav setting
 
 
-## Theming Documentaation
+## Theming Documentation
 
 
 To change how documentation is shown, add a theme setting by editing the comfiguration file,the mkdocs.yml file.
 
-theme: readthedocs
+
+
+`theme:
+    name: readthedocs`
 
 Save your adjustments to see your theme in action.
 
@@ -90,7 +105,7 @@ Your documnention site should be built before deploying . Here is how to build y
 The newly constructed documentation site uses only static files, allowing you to host it nearly anywhere by simply uploading the contents of the complete site directory to wherever you host your website, and you're done.</p>
 
 
-## Help and Additional Resoureces
+## Help and Additional Resources
 * For full doumentation visit [Mkdocs.org](https://www.mkdocs.org/).
 * Use [GitHub Discussions](https://github.com/mkdocs/mkdocs/discussions) [GitHub issues](https://github.com/mkdocs/mkdocs/issues) for more help with MkDocs.
 
