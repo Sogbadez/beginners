@@ -36,31 +36,31 @@ Skip ahead to installation if you already have these program installed
 
 MkDocs is installed using Python Package Manager ,Pip. Run this  command to install MkDocs:
 
-`Pip install MkDocs`
+    Pip install MkDocs
 
 The MkDocs is now installed on your device. Check if everything worked okay by running:
 
-`MkDocs version`
+        MkDocs version
 
 
 ## Creating a New project.
 
  To create a new project, run the following:
 
- `Mkdocs new  my-project` <br>
-`cd my project`
+    Mkdocs new  my-project
+    cd my project
 
 Your new project should contain a single configuration file **(mkdocs .yml)** and a folder, **doc** that will contain your documentation source file
 
 Because Mkdocs includes a built-in dev server that gives preview while you work, you may start it by running the mkdocs serve command:
 
-`mkdocs serve `<br>
-`INFO     -  Building documentation...`<br>
-`INFO     -  Cleaning site directory`<br>
-`INFO     -  Documentation built in 0.22 seconds`<br>
-`INFO     -  Documentation built in 0.22 seconds`<br>
-`INFO     -  [12:35:34] Watching paths for changes: 'docs', 'mkdocs.yml'`<br>
-`INFO     -  [12:35:34] Serving on http://127.0.0.1:8000/`<br>
+    mkdocs serve `
+    INFO     -  Building documentation...
+    INFO     -  Cleaning site directory
+    INFO     -  Documentation built in 0.22 seconds
+    INFO     -  Documentation built in 0.22 seconds
+    INFO     -  [12:35:34] Watching paths for changes: 'docs', 'mkdocs.yml'
+    INFO     -  [12:35:34] Serving on http://127.0.0.1:8000/
 
 
 In your browser, navigate to http://127.0.0.1:8000/ to see the default home page:
@@ -71,8 +71,15 @@ In your browser, navigate to http://127.0.0.1:8000/ to see the default home page
 
 
 
-## Installing Python and PIP
-    
+ - ## Installing Python and PIP
+Python can be installed using a package manager of yoyur choice or by downloading an appropriate installer from 
+   [python.org](https://www.python.org)
+
+
+ - ### Intalling PIP
+Python Package manager, PIP is  usually installed by default in recent versions of Python.However it might need an upgrade:
+
+        pip install --upgrade pip
  
 
 ## Adding Pages
@@ -91,8 +98,8 @@ To change how documentation is shown, add a theme setting by editing the comfigu
 
 
 
-`theme:
-    name: readthedocs`
+    theme:
+        name: readthedocs
 
 Save your adjustments to see your theme in action.
 
@@ -100,7 +107,7 @@ Save your adjustments to see your theme in action.
 
 Your documnention site should be built before deploying . Here is how to build your site:
 
-`mkodcs build`
+    mkdocs build
 <p>
 The newly constructed documentation site uses only static files, allowing you to host it nearly anywhere by simply uploading the contents of the complete site directory to wherever you host your website, and you're done.</p>
 
